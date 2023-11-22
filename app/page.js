@@ -7,7 +7,7 @@ import fire from "@/assets/fire.png"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-flag overflow-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-between min-[801px]:bg-flag max-[800px]:bg-flag2 overflow-hidden w-[100%]">
       <div>
         <h1 className='relative z-10 min-[801px]:text-[6vw] text-[30vw] my-auto whitespace-nowrap text-gray-200 opacity-60 pt-3'>USD USD USD USD USD USD USD USD USD USD USD USD USD</h1>
       </div>
@@ -22,7 +22,7 @@ export default function Home() {
         <h1 className='relative z-10 min-[801px]:text-[6vw] text-[30vw] my-auto whitespace-nowrap text-gray-200 opacity-60 pb-3'>USD USD USD USD USD USD USD USD USD USD USD USD USD</h1>
       </div>
 
-      <Image src={fire} className='absolute opacity-80 min-[801px]:-bottom-[4rem] min-[1500px]:-bottom-[8.7rem] max-[800px]:hidden max-[800px]:w-[100%]'></Image>
+      <Image src={fire} className='absolute opacity-80 min-[801px]:-bottom-[5.5rem] min-[1500px]:-bottom-[10.1rem] max-[800px]:hidden max-[800px]:w-[100%]'></Image>
     </main>
   )
 }
