@@ -12,11 +12,11 @@ export default function Home() {
         <h1 className='relative z-10 min-[801px]:text-[6vw] text-[30vw] my-auto whitespace-nowrap text-gray-200 opacity-60 pt-3'>USD USD USD USD USD USD USD USD USD USD USD USD USD</h1>
       </div>
 
-      <Image className='absolute min-[801px]:w-[25%] min-[801px]:left-40 min-[801px]:top-0 top-[10dvh] w-[50%] -left-16' src={Eagle}></Image>
+      <Image className='absolute min-[801px]:w-[25%] min-[801px]:left-40 min-[801px]:top-0 top-[10dvh] w-[50%] -left-12' src={Eagle}></Image>
       <Box/>
 
-      <Image src={plane} className='absolute overflow-hidden min-[801px]:bottom-0 bottom-[4dvh] -right-0  min-[801px]:right-10 min-[801px]:w-[30%] w-[50%]'></Image>
-      <Image src={plane} className='absolute overflow-hidden min-[801px]:bottom-0 bottom-[4dvh] -left-0 rotate-180 -scale-y-100 min-[801px]:left-10 min-[801px]:w-[30%] w-[50%]'></Image>
+      <Image src={plane} className='absolute overflow-hidden min-[801px]:bottom-0 bottom-[4dvh] -right-0  min-[801px]:right-10 min-[801px]:w-[30%] w-[30%]'></Image>
+      <Image src={plane} className='absolute overflow-hidden min-[801px]:bottom-0 bottom-[4dvh] -left-0 rotate-180 -scale-y-100 min-[801px]:left-10 min-[801px]:w-[30%] w-[30%]'></Image>
       
       <div>
         <h1 className='relative z-10 min-[801px]:text-[6vw] text-[30vw] my-auto whitespace-nowrap text-gray-200 opacity-60 pb-3'>USD USD USD USD USD USD USD USD USD USD USD USD USD</h1>
