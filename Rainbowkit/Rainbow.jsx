@@ -3,7 +3,7 @@ import React, { createContext, useContext } from "react";
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { polygon, polygonMumbai } from "wagmi/chains";
+import { mainnet } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
@@ -11,7 +11,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 const WalletIdContext = createContext();
 
 const { chains, publicClient } = configureChains(
-  [polygonMumbai, polygon],
+  [mainnet],
   [publicProvider()]
 );
 const { connectors } = getDefaultWallets({

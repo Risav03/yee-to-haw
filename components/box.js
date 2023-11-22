@@ -64,10 +64,10 @@ export default function Box(){
             <div className="border-8 border-black min-[801px]:w-[50%] w-[70%] mx-auto min-[800px]:mt-12 mt-6 mb-8 min-[800px]:mb-12 p-6 rounded-xl">
                 <h3 className="font-semibold min-[800px]:text-[1.3vw] text-[4vw] text-gray-500">Potential Profit:</h3>
                 <h2 className="font-bold min-[801px]:text-[4vw] text-[12vw]">
-                    {(profit/bought)*100}%
+                    {bought!= 0 ? (profit/bought)*100: 0}%
                 </h2>
                 <h3 className="font-semibold min-[801px]:text-[2vw] text-[4vw] text-gray-700">
-                    {(profit/bought)}x + 5.12 ETH
+                    {bought != 0 ? (profit/bought): "0"}x + 5.12 ETH
                 </h3>
             </div>
 
