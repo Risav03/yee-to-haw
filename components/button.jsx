@@ -72,7 +72,7 @@ function Button(){
                       <button
                         onClick={openConnectModal}
                         type="button"
-                        className="bg-white hover:bg-gray-300 px-7 py-4 border-4 border-black text-black min-[801px]:text-[2vw] text-[5vw] rounded-xl translate-y-8 relative z-50"
+                        className="bg-white hover:bg-gray-300 px-7 py-4 border-4 border-black text-black min-[801px]:text-[1.5vw] text-[4vw] rounded-xl translate-y-8 relative z-50"
                       >
                         Connect Wallet
                       </button>
@@ -84,7 +84,7 @@ function Button(){
                       <button
                         onClick={openChainModal}
                         type="button"
-                        className="bg-red-500 hover:bg-red-700 px-7 py-4 border-4 border-black text-white min-[801px]:text-[2vw] text-[5vw] rounded-xl translate-y-10 relative z-50"
+                        className="bg-red-500 hover:bg-red-700 px-7 py-4 border-4 border-black text-white min-[801px]:text-[1.5vw] text-[4vw] rounded-xl translate-y-10 relative z-50"
                       >
                         Wrong network
                       </button>
