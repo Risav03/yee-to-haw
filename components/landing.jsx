@@ -28,7 +28,7 @@ export default function Landing() {
         <h1 className='relative z-10 min-[801px]:text-[6vw] text-[30vw] my-auto whitespace-nowrap text-gray-200 opacity-60 pb-3'>USD USD USD USD USD USD USD USD USD USD USD USD USD</h1>
       </div>
 
-      <Image src={fire} className='absolute opacity-80 min-[801px]:-bottom-[0rem] min-[1200px]:-bottom-[10rem] min-[1500px]:-bottom-[16.2rem] max-[800px]:hidden max-[800px]:w-[100%]'></Image>
+      <Image src={fire} className='absolute opacity-80 min-[801px]:-bottom-[0rem] min-[1200px]:-bottom-[10rem] min-[1500px]:-bottom-[15.4rem] max-[800px]:hidden max-[800px]:w-[100%]'></Image>
     </main>
   )
 }
