@@ -7,6 +7,7 @@ export default function Box(){
     const [bought, setBought] = useState(0)
     const [current, setCurrent] = useState(0);
     const [profit, setProfit] = useState(0);
+    // const [amount, setAmount] = useState(0);
 
     const address = useSelector((state)=>state.click.account);
     console.log(address);
@@ -48,6 +49,22 @@ export default function Box(){
         }
     }
 
+    function getTweetmsg(){
+
+        if(bought == 0){
+            const tweetmsg = "https://yeehaw-rose.vercel.app/api/share?v1=0"+encodeURIComponent('&')+"v2=0"+encodeURIComponent('&')+"v3=0"+encodeURIComponent('&')+"v4=0"+encodeURIComponent('&')+"v5=0";
+            return tweetmsg;
+        }
+        else{
+            const tweetmsg = "https://yeehaw-rose.vercel.app/api/share?v1="+String(bought)+encodeURIComponent('&')+"v2="+String(current)+encodeURIComponent('&')+"v3="+String((profit/bought)*100)+encodeURIComponent('&')+"v4="+String(profit/bought)+encodeURIComponent('&')+"v5="+String(profit);
+            return tweetmsg;
+        }
+
+        
+    }
+
+    
+
 
     useEffect(()=>{
         fetchbought();
@@ -67,7 +84,7 @@ export default function Box(){
                     {bought!= 0 ? (profit/bought)*100: 0}%
                 </h2>
                 <h3 className="font-semibold min-[801px]:text-[2vw] text-[4vw] text-gray-700">
-                    {bought != 0 ? (profit/bought): "0"}x + 5.12 ETH
+                    {bought != 0 ? (profit/bought): "0"}x + {profit} ETH
                 </h3>
             </div>
 
@@ -76,6 +93,10 @@ export default function Box(){
                 <h4 className="font-semibold min-[800px]:text-[1.3vw] text-[4vw]">Bought for: $ {bought}</h4>
                 <h4 className="font-semibold min-[800px]:text-[1.3vw] text-[4vw]">Current value: $ {current}</h4>
             </div>
+            {address && <button className="relative z-[50] bg-blue-500 text-white px-7 py-4 rounded-xl min-[801px]:text-[2vw] border-[3px] hover:bg-blue-700 border-black text-[5vw]">
+                <a class=""
+  href={`https://twitter.com/intent/tweet?text=${getTweetmsg()}`}>
+Tweet</a></button>}
         </div>
     )
 }

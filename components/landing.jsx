@@ -24,11 +24,11 @@ export default function Landing() {
       <Image src={plane} className='absolute overflow-hidden min-[801px]:bottom-0 bottom-[4dvh] -right-0  min-[801px]:right-10 min-[801px]:w-[30%] w-[30%]'></Image>
       <Image src={plane} className='absolute overflow-hidden min-[801px]:bottom-0 bottom-[4dvh] -left-0 rotate-180 -scale-y-100 min-[801px]:left-10 min-[801px]:w-[30%] w-[30%]'></Image>
       
-      <div>
+      <div className='relative'>
         <h1 className='relative z-10 min-[801px]:text-[6vw] text-[30vw] my-auto whitespace-nowrap text-gray-200 opacity-60 pb-3'>USD USD USD USD USD USD USD USD USD USD USD USD USD</h1>
+      <Image src={fire} className='absolute opacity-80 min-[801px]:-bottom-[0rem] min-[1200px]:-bottom-[11.6rem] min-[1500px]:-bottom-[15.4rem] max-[800px]:hidden max-[800px]:w-[100%]'></Image>
       </div>
 
-      <Image src={fire} className='absolute opacity-80 min-[801px]:-bottom-[0rem] min-[1200px]:-bottom-[10rem] min-[1500px]:-bottom-[15.4rem] max-[800px]:hidden max-[800px]:w-[100%]'></Image>
     </main>
   )
 }
